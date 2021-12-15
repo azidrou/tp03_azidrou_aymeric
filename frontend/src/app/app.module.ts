@@ -11,6 +11,8 @@ import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { VerificationFormulaireDirective } from './verification-formulaire.directive';
 import { PhoneNumberPipe } from './phone-number.pipe';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,12 +24,14 @@ import { PhoneNumberPipe } from './phone-number.pipe';
     TetiereComponent,
     RecapitulatifComponent,
     VerificationFormulaireDirective,
-    PhoneNumberPipe
+    PhoneNumberPipe,
+    CatalogueComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

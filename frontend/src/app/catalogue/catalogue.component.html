@@ -1,0 +1,13 @@
+<p>catalogue works!</p>
+<hr>
+<p>Recherche : </p>
+<input (ngModelChange)="valuechange($event)" [(ngModel)]="recherche" />
+
+<div 
+    *ngFor="let c of obsCatalogue | async">
+    {{ c.libelle }}
+</div>
+<hr />
+<br />
+<button (click)="getCount()">Compteur de fun</button>
+{{ count }}
