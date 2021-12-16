@@ -15,6 +15,7 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     RecapitulatifComponent,
     VerificationFormulaireDirective,
     PhoneNumberPipe,
-    CatalogueComponent
+    CatalogueComponent,
+
   ],
   imports: [
     BrowserModule,
