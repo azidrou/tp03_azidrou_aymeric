@@ -29,7 +29,7 @@ export class CatalogueComponent implements OnInit {
         produit => 
             produit.filter(
               //produit => produit.prix.toString().startsWith(this.recherche.toString()))
-              produit => produit.prix == Number(this.recherche))
+              produit => produit.prix <= Number(this.recherche))
       ))
     }else{
       this.obsCatalogue = this.service1.getCatalogue()
